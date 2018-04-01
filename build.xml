@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deploy" name="ccdb">
+    <property file="build_info.properties"/>
+    <property name="project.version" value="${build.major.number}.${build.minor.number}.${build.revision.number}.${build.buildnum.number}"/>
+    <property name="project.dir" value="src/salutesig@telota.bbaw.de" />
+    <property name="project.app" value="salutesig"/>
+    <property name="dist.dir" value="dist/"/>
+
+    <target name="update-version">
+        <replaceregexp 
+            file="${project.dir}/install.rdf"
+            match='(&lt;em:version&gt;).*(&lt;/em:version&gt;)'
+            replace="\1${project.version}\2"
+            byline="true"
+        />
+    </target>
+
+    <target name="bump">
+        <propertyfile file="build_info.properties">
+            <entry key="build.buildnum.number" type="int" operation="+" value="1"/>
+        </propertyfile>
+    </target>
+
+    <target name="bump-revision">
+        <antcall target="bump" />
+        <propertyfile file="build_info.properties">
+            <entry key="build.revision.number" type="int" operation="+" value="1"/>
+        </propertyfile>
+        <antcall target="update-version" />
+    </target>
+
+    <target name="bump-minor">
+        <antcall target="bump"/>
+        <propertyfile file="build_info.properties">
+            <entry key="build.minor.number" type="int" operation="+" value="1"/>
+            <entry key="build.revision.number" type="int" value="0"/>
+        </propertyfile>
+        <antcall target="update-version" />
+    </target>
+
+    <target name="bump-major">
+        <antcall target="bump" />
+        <propertyfile file="build_info.properties">
+            <entry key="build.major.number" type="int" operation="+" value="1"/>
+            <entry key="build.minor.number" type="int" value="0"/>
+            <entry key="build.revision.number" type="int" value="0"/>
+        </propertyfile>
+        <antcall target="update-version" />
+    </target>
+
+    <target name="xpi">
+        <antcall target="bump-revision" />
+        <zip basedir="${project.dir}" destfile="${dist.dir}/${project.app}-${project.version}.xpi" />
+    </target>
+</project>

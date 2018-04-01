@@ -1,0 +1,3 @@
+content salutesig   content/
+
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://salutesig/content/salutesig-compose.xul

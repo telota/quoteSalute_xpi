@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<overlay id="salute" 
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script type="application/javascript" src="chrome://salutesig/content/salutesig.js"/>
+ <toolbar id="composeToolbar2">
+  <toolbarbutton 
+    id="button-salutesig-fetch"
+    class="toolbarbutton-1" 
+    type="menu-button"
+    label="Salutesig"
+    tooltiptext="Fetch salute from correspsearch.net"
+    oncommand="insertSalute();"
+    ></toolbarbutton>
+ </toolbar>
+</overlay>
