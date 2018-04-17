@@ -4,7 +4,7 @@
 
 Thunderbird Addon für [quoteSalute](https://correspsearch.net/quotesalute/index.xql).
 
-quoteSalute bietet inspirierende Grußformeln aus digitalen Briefeditionen für Ihre E-Mail-Korrespondenz. Die Anwendung schafft so einen spielerischen Zugang in die Welt historischer Korrespondenzen und ermöglicht die Einbindung wissenschaflicher Editionsarbeit in Ihre Alltagskommunikation.
+quoteSalute bietet inspirierende Grußformeln aus digitalen Briefeditionen für Ihre E-Mail-Korrespondenz. Die Anwendung schafft so einen spielerischen Zugang in die Welt historischer Korrespondenzen und ermöglicht die Einbindung wissenschaftlicher Editionsarbeit in Ihre Alltagskommunikation.
 
 ## Build
 
