@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="deploy" name="ccdb">
+<project default="xpi" name="quotesalute@telota.bbaw.de">
     <property file="build_info.properties"/>
-    <property name="project.version" value="${build.major.number}.${build.minor.number}.${build.revision.number}.${build.buildnum.number}"/>
-    <property name="project.dir" value="src/salutesig@telota.bbaw.de" />
-    <property name="project.app" value="salutesig"/>
+    <property name="project.version" value="${build.major.number}.${build.minor.number}.${build.revision.number}_build${build.buildnum.number}"/>
+    <property name="project.dir" value="src/quotesalute@telota.bbaw.de" />
+    <property name="project.app" value="quotesalute"/>
     <property name="dist.dir" value="dist/"/>
 
     <target name="update-version">

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://quotesalute/skin/quotesalute.css" type="text/css" ?>
+
+<overlay id="salute" 
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script type="application/javascript" src="chrome://quotesalute/content/quotesalute.js"/>
+ <toolbar id="composeToolbar2">
+  <toolbarbutton 
+    id="button-quotesalute"
+    class="toolbarbutton-1"
+    label="quoteSalute"
+    tooltiptext="Füge neue Salute von correspsearch.net ein"
+    oncommand="insertSalute();"
+    ></toolbarbutton>
+ </toolbar>
+</overlay>

@@ -4,9 +4,9 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>salutesig@telota.bbaw.de</em:id>
-    <em:name>SaluteSig</em:name>
-    <em:version>0.1.2.2</em:version>
+    <em:id>quotesalute@telota.bbaw.de</em:id>
+    <em:name>quotesalute</em:name>
+    <em:version>0.2.5_build11</em:version>
     <em:creator>TELOTA</em:creator>
     <em:developer>Oliver Pohl</em:developer>
     <em:type>2</em:type>

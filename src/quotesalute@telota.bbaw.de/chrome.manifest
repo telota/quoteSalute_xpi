@@ -1,0 +1,4 @@
+content quotesalute content/
+
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://quotesalute/content/quotesalute-compose.xul
+style chrome://messenger/content/messengercompose/messengercompose.xul chrome://quotesalute/content/quotesalute.css
