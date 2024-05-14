@@ -1,4 +1,12 @@
-# quotesalute (Thunderbird Extension)
+# quotesalute (Thunderbird Extension) [ARCHIVED]
+
+## Important note
+
+**This plugin is no longer maintained.** 
+
+It is also not compatible with current Thunderbird installations. 
+
+Please use our [website](https://correspsearch.net/en/quotesalute/search-grussformeln.html) instead. 
 
 ## Beschreibung
 
